@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\QuizController;
+use App\Models\Quiz;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('accueil');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::resource('quizzes', QuizController::class);
+
+
+
+
+
+
+
 Route::get('/test', function () {
     return view('accueil');
 })->name('test');
