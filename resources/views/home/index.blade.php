@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>QuizBuilder</title>
     <link rel="icon" type="image/png" href="{{ asset('images/logo-noname.png') }}">
-    <link href="{{ asset('css/styles-accueil.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles-home.css') }}" rel="stylesheet">
 
 </head>
 
