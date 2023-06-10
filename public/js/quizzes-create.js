@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // questionInput.setAttribute("required", "");
 
             const correctAnswerSelect = document.createElement("select");
+            correctAnswerSelect.setAttribute("name", `question-answer-${i}`);
 
             const label = document.createElement("label");
             label.setAttribute("id", "label-correct");

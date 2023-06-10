@@ -19,7 +19,7 @@
                 <input name="quiz-title" id="quiz-title" type="text" >
                 <label for="quiz-description">Description du quiz</label>
                 <input name="quiz-description" id="quiz-description" type="text" >
-                <label for="quiz-category">Categorie du quiz</label>
+                <label for="quiz-category">Catégorie du quiz</label>
                 <input name="quiz-category" id="quiz-category" type="text" >
             </div>
             <div class="quiz-section inactive">
