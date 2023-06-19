@@ -81,7 +81,7 @@ class QuizController extends Controller
     public function show($code)
     {
         $quiz = Quiz::where('access_code', $code)->first();
-        return view('quizzes.show', $quiz);
+        return view('quizzes.show', ['quiz'=>$quiz]);
     }
 
 
@@ -104,5 +104,13 @@ class QuizController extends Controller
     public function destroy($code)
     {
         //
+    }
+
+    function search() {
+        return view('quizzes.search');
+    }
+
+    function get(Request $request) {
+        return redirect()->route("quizzes.show", $request->access_code);
     }
 }

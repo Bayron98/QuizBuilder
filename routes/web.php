@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\QuizController;
 use App\Models\Quiz;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/quizzes/search', [QuizController::class, 'search'])->name('quizzes.search');
+Route::get('/quizzes/get', [QuizController::class, 'get'])->name('quizzes.get');
 
 Route::resource('quizzes', QuizController::class);
 

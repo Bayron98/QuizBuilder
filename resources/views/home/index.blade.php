@@ -25,7 +25,7 @@
         <div class="section actions-section">
             <div>
                 <a href="{{ route('quizzes.create') }}"><button>Créer un quiz</button></a>
-                <a href="{{ route('test') }}"><button>Passer un quiz</button></a>
+                <a href="{{ route('quizzes.search') }}"><button>Passer un quiz</button></a>
             </div>
             <div class="separator"> ou </div>
 
