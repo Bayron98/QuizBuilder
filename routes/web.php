@@ -27,7 +27,7 @@ Route::resource('quizzes', QuizController::class);
 
 
 Route::get('/test', function () {
-    return view('accueil');
+    return view('quizzes.access_code');
 })->name('test');
 
 

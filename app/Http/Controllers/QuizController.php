@@ -45,7 +45,8 @@ class QuizController extends Controller
             $quiz->quiz_title = $request->input('quiz-title') ;
             $quiz->quiz_description = $request->input('quiz-description');
             $quiz->quiz_category = $request->input('quiz-category');
-            $quiz->access_code = Str::random(8);
+            $access_code = Str::random(8);
+            $quiz->access_code = $access_code;
             $quiz->save();
             for ($i = 1; $i <= (int)$request->input('quiz-questions-nbr'); $i++){
                 $question = new Question();
@@ -73,7 +74,7 @@ class QuizController extends Controller
 
 
         }
-        return 'success';
+        return view('quizzes.access_code', ['access_code'=>$access_code]);
     }
 
 

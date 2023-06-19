@@ -20,12 +20,36 @@ document.addEventListener("DOMContentLoaded", function () {
         if(k === 1){
            nbr = addQuestions();
         }else if (k === Number(nbr)+1){
+            var inputContainer = document.querySelector('.active');
+            var inputs = inputContainer.getElementsByTagName('input');
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value === '') {
+                  alert('Please fill in all the fields');
+                  return;
+                }
+              }
+
             continueButton.classList.remove('active');
             continueButton.classList.add('inactive');
             var submit = document.getElementById('submit-btn');
             submit.classList.remove('inactive');
+
+
+        }else{
+            var inputContainer = document.querySelector('.active');
+            var inputs = inputContainer.getElementsByTagName('input');
+
+            for (var i = 0; i < inputs.length; i++) {
+              if (inputs[i].value === '') {
+                alert('Please fill in all the fields');
+                return;
+              }
+            }
         }
         k++;
+
+
+
         var activeDiv = document.querySelector('.active');
         activeDiv.classList.remove('active');
         activeDiv.classList.add('inactive');
