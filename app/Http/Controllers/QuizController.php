@@ -109,6 +109,7 @@ class QuizController extends Controller
     function search() {
         return view('quizzes.search');
     }
+    
 
     function get(Request $request) {
         return redirect()->route("quizzes.show", $request->access_code);

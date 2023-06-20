@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('username');
             $table->integer('score');
             $table->integer('completion_time');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->timestamps();
         });
     }
