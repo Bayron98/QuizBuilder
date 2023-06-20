@@ -149,6 +149,7 @@ select{
 .quiz-description{
     color: #010101;
     font-size: 20px;
+    text-align: center;
 }
 
 .quiz-category {
@@ -198,6 +199,14 @@ select{
     margin: 20px;
 }
 
+.score-text{
+    letter-spacing: 0.1em;
+    color: #0C2D48;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+}
+
 .score{
     display: inline-block;
     background-color: #f2f2f2;
@@ -206,6 +215,7 @@ select{
     font-family: 'Courier New', monospace;
     cursor: pointer;
     margin: 10px;
+    margin-bottom: 60px;
 }
 
 .time-display-style {
@@ -236,6 +246,24 @@ select{
     color: #42A5FF;
 }
 
+#facebook_share_link, #twitter_share_link{
+    margin: 10px;
+
+}
+
+#facebook_share_link:hover path,
+#twitter_share_link:hover path {
+  fill: #145DA0;
+}
+
+
+.share-text{
+    color: #0C2D48;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
 
 
 

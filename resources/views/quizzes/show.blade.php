@@ -14,7 +14,9 @@
 <body>
     <h1>{{ $quiz->quiz_title }}</h1>
     <div id="time-display"></div>
+    <input type="text" id="quiz_code" hidden name="quiz_code" value="{{$quiz_code}}">
     <form id="quiz-form" action="{{ route('reportings.store') }}" method="post">
+        <input type="text" id="quiz_id" hidden name="quiz_id" value="{{$quiz->id}}">
         @csrf
         <div class="quiz-container">
             <div class="quiz-start active">
