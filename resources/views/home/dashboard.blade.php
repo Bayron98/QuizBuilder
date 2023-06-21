@@ -12,7 +12,7 @@
 
 <body>
     <div class="dashboard">
-        <h1>Tableau de bord utilisateur</h1>
+        <h1>Tableau de bord</h1>
         <p>Bienvenue, {{ $name }} !</p>
 
         <div class="actions">

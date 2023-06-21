@@ -13,6 +13,7 @@
 <body>
     <div class="container">
         <h1>Reporting du quiz</h1>
+        <h2>Nombre des utilisateurs:  <b>{{count($reportings)}}</b></h2>
         @if (sizeof($reportings) === 0)
             <h1>Aucun utilisateur n'a passé le quiz</h1>
         @else
@@ -41,7 +42,7 @@
             </div>
         @endif
         <a style="position: fixed; top: 20px; right: 20px; background-color: #42A5FF; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); z-index: 9999;"
-            href="{{ url()->previous() }}">Retour</a>
+            href="{{ route('quizzes.index') }}">Retour</a>
 
 
     </div>

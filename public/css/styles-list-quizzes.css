@@ -23,6 +23,27 @@ h1{
     text-align: center;
     margin: 20px;
 }
+h2{
+    padding: 5 px;
+    margin-right: 0px;
+    border-radius: 25px;
+    letter-spacing: 0.1em;
+    color: #0C2D48;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+
+}
+b{
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    margin: 10px;
+
+}
 
 .table {
     width: 100%;
@@ -48,6 +69,7 @@ h1{
 .table td {
     background-color: #B1D4E0;
     color: black;
+    text-align: center;
 }
 
 
@@ -85,6 +107,9 @@ a:hover, .btn:hover {
 @media (max-width: 768px) {
     h1 {
       font-size: 24px;
+    }
+    h2 {
+      font-size: 16px;
     }
 
     .table th,
