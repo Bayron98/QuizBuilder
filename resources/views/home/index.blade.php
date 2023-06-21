@@ -30,8 +30,8 @@
             <div class="separator"> ou </div>
 
             <div>
-                <a href="{{ route('test') }}"><button>Se connecter</button></a>
-                <div class="signup-container">Première fois sur QuizBuilder ? <a class="signup-a" href="{{ route('test') }}">S’INSCRIRE</a></div>
+                <a href="{{ route('login') }}"><button>Se connecter</button></a>
+                <div class="signup-container">Première fois sur QuizBuilder ? <a class="signup-a" href="{{ route('register') }}">S’INSCRIRE</a></div>
             </div>
         </div>
     </div>
