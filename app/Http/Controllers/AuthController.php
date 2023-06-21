@@ -9,10 +9,17 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->only('update_form');
+    }
     public function register_form(){
         return view('auth.register');
     }
     public function login_form(){
+        if(Auth::check()){
+            return redirect()->route('dashboard');
+        }
         return view('auth.login');
     }
     public function update_form(){
@@ -66,7 +73,7 @@ class AuthController extends Controller
     }
 
     // Update Account
-    public function updateAccount(Request $request)
+    public function update(Request $request)
     {
         $user = Auth::user();
 

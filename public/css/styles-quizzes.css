@@ -9,8 +9,8 @@ body{
     flex-direction: column;
     align-items: center;
     background-image: url('/images/background-home.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-size:cover;
     color: #010101;
     font-size: 18px;
 }
@@ -266,6 +266,74 @@ select{
 }
 
 
+
+@media (max-width: 768px) {
+
+    h1 {
+      font-size: 24px;
+    }
+
+    .inactive {
+      display: none;
+    }
+
+    .active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    input {
+      font-size: 16px;
+    }
+
+    .continue-button,
+    #submit-btn {
+      width: 100%;
+      font-size: 16px;
+    }
+
+    select {
+      width: 100%;
+    }
+
+    .quiz-start {
+      width: 80%;
+    }
+
+    .score-title {
+      font-size: 24px;
+    }
+
+    .score-text {
+      font-size: 18px;
+    }
+
+    .score {
+      margin-bottom: 40px;
+    }
+
+    .time-display-style {
+      font-size: 14px;
+      padding: 6px;
+      margin: 10px;
+    }
+
+    .quiz-answer {
+      font-size: 14px;
+    }
+
+    #facebook_share_link,
+    #twitter_share_link {
+      margin: 5px;
+    }
+
+    .share-text {
+      font-size: 14px;
+      margin: 10px;
+    }
+  }
 
 
 

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('score');
             $table->integer('completion_time');
             $table->string('email')->nullable();
+            $table->foreignId('quiz_id');
             $table->timestamps();
         });
     }

@@ -20,6 +20,8 @@
             <button id='submit-btn' class="submit-button" style="margin: 0px; margin-top: 10px">Trouver le quiz</button>
         </div>
     </form>
+    <a style="position: fixed; top: 20px; right: 20px; background-color: #42A5FF; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); z-index: 9999;" href="{{ route('home') }}">Retour au page d'accueil</a>
+
 
 
 </body>

@@ -5,6 +5,7 @@
 body{
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -124,6 +125,24 @@ button:hover {
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+      flex-direction: column;
     }
-}
+
+    .section {
+
+      width: 100%;
+    }
+
+    .description-section {
+      width: 90%;
+    }
+
+    .image-container {
+      width: 90%;
+    }
+    .actions-section {
+        margin: 0;
+        padding: 0;
+
+    }
+  }

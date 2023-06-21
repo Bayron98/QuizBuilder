@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Reporting;
 use Illuminate\Http\Request;
 
 class ReportingController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->only('index');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -34,7 +39,12 @@ class ReportingController extends Controller
      */
     public function store(Request $request)
     {
-        return response()->json($request);
+        $reporting = new Reporting();
+        $reporting->username = $request->username;
+        $reporting->score = $request->score;
+        $reporting->completion_time = $request->completion_time;
+        $reporting->quiz_id = $request->quiz_id;
+        $reporting->save();
     }
 
     /**
@@ -45,7 +55,8 @@ class ReportingController extends Controller
      */
     public function show($id)
     {
-        //
+        $reportings = Reporting::where('quiz_id', $id)->get();
+        return view("reportings", ['reportings'=>$reportings]);
     }
 
     /**
