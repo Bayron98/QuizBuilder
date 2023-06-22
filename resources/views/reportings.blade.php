@@ -13,15 +13,15 @@
 <body>
     <div class="container">
         <h1>Reporting du quiz</h1>
-        <h2>Nombre des utilisateurs:  <b>{{count($reportings)}}</b></h2>
+        <h2>Nombre des participants:  <b>{{count($reportings)}}</b></h2>
         @if (sizeof($reportings) === 0)
-            <h1>Aucun utilisateur n'a passé le quiz</h1>
+            <h1>Aucun participant n'a passé le quiz</h1>
         @else
             <div class="table-container">
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Nom d'utilisateur</th>
+                            <th>Nom du participant</th>
                             <th>Score</th>
                             <th>Temps de complétion en secondes</th>
                             <th>Date de passage</th>
