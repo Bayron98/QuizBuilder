@@ -3,7 +3,7 @@
 QuizBuilder est une plateforme en ligne de création de quiz conçue pour fournir un outil facile à utiliser pour créer et gérer des quiz interactifs. La plateforme vise à répondre aux besoins des utilisateurs dans différents domaines d'apprentissage, tels que l'éducation, la formation professionnelle et les évaluations en ligne.
 
 ![Page d'accueil](/screenshots/accueil.jpeg)
-![Quiz page](/screenshots/quiz.jpeg)
+![Quiz page](/screenshots/quiz.png)
 
 ## Description
 
