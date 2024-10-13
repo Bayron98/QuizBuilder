@@ -31,5 +31,3 @@ Pour installer et exécuter QuizBuilder sur votre propre environnement, suivez c
 ## Auteur
 
 Ce projet a été développé par [Bayour Badr ↗](https://github.com/Bayron98).
-
-Nous espérons que QuizBuilder sera utile aux enseignants, formateurs, étudiants et à toute personne intéressée par la création et l'utilisation de quiz interactifs.
