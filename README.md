@@ -29,5 +29,4 @@ Pour installer et exécuter QuizBuilder sur votre propre environnement, suivez c
 5. Lancez le serveur de développement avec `php artisan serve`.
 
 ## Auteur
-
-Ce projet a été développé par [Bayour Badr ↗](https://github.com/Bayron98).
+**Bayron98**
